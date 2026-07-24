@@ -1,0 +1,54 @@
+INTERVIEW TRANSCRIPT
+Candidate: Asha Rao
+Role: Backend Developer
+Grader: heuristic (no API key)
+Overall Score: 6.5 / 10
+Recommendation: Hire
+
+--------------------------------------------------------------------
+Q1 (technical): Can you explain the difference between SQL and NoSQL
+databases, and when you'd choose one over the other?
+
+A: SQL databases are relational, they enforce a schema and guarantee
+ACID consistency, good for structured data like financial records.
+NoSQL databases like MongoDB store documents, they scale horizontally
+more easily, for example a system with rapidly changing schema or huge
+write volume would benefit from NoSQL.
+
+Score: 7.1/10 — matched 6/8 expected concepts, gave a concrete example.
+--------------------------------------------------------------------
+Q2 (technical): Walk me through how you would design a rate limiter for
+a public API.
+
+A: I'd implement a token bucket algorithm, storing counters in Redis so
+it works across distributed servers. Each user gets a bucket that
+refills at a fixed rate, and requests are throttled once the bucket is
+empty. For example, 100 requests per minute per API key.
+
+Score: 7.3/10 — named a concrete algorithm and addressed the
+distributed-server case.
+--------------------------------------------------------------------
+Q3 (behavioral): Tell me about a time you had to debug a production
+issue under time pressure. What did you do?
+
+A: We had a production outage last quarter, I checked our monitoring
+dashboards and logs, found the root cause was a bad deploy that
+skipped a migration, rolled it back within 10 minutes, and wrote a
+postmortem for the team with follow-up action items.
+
+Score: 6.7/10 — structured debugging process with a clear follow-up.
+--------------------------------------------------------------------
+Q4 (behavioral): Describe a disagreement you had with a teammate about
+a technical decision. How was it resolved?
+
+A: I disagreed with a teammate about using a queue vs synchronous calls
+for a notification service. We discussed tradeoffs, I pulled latency
+data showing the queue would reduce load spikes, we compromised on a
+hybrid approach and it worked well in production.
+
+Score: 5.0/10 — resolved constructively, but light on detail compared
+to the other answers.
+--------------------------------------------------------------------
+
+This transcript corresponds to interview #1 in data/interviews.db.
+Regenerate the full sample set anytime with: python seed_data.py

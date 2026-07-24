@@ -1,0 +1,85 @@
+{
+  "Backend Developer": [
+    {
+      "id": "bd1",
+      "type": "technical",
+      "question": "Can you explain the difference between SQL and NoSQL databases, and when you'd choose one over the other?",
+      "keywords": ["schema", "relational", "scale", "consistency", "document", "join", "acid", "flexible"],
+      "ideal_points": ["mentions structured vs unstructured data", "mentions scalability tradeoffs", "gives a concrete use case"]
+    },
+    {
+      "id": "bd2",
+      "type": "technical",
+      "question": "Walk me through how you would design a rate limiter for a public API.",
+      "keywords": ["token bucket", "sliding window", "redis", "throttle", "queue", "distributed", "cache"],
+      "ideal_points": ["names a concrete algorithm", "addresses distributed/multi-server case", "mentions storage for counters"]
+    },
+    {
+      "id": "bd3",
+      "type": "behavioral",
+      "question": "Tell me about a time you had to debug a production issue under time pressure. What did you do?",
+      "keywords": ["logs", "rollback", "monitoring", "root cause", "communicate", "postmortem", "team"],
+      "ideal_points": ["describes a structured debugging process", "mentions communication with stakeholders", "mentions follow-up/prevention"]
+    },
+    {
+      "id": "bd4",
+      "type": "behavioral",
+      "question": "Describe a disagreement you had with a teammate about a technical decision. How was it resolved?",
+      "keywords": ["compromise", "data", "discuss", "listen", "decision", "respect", "escalate"],
+      "ideal_points": ["shows they listened to the other view", "used evidence/data to resolve it", "reached a concrete resolution"]
+    }
+  ],
+  "Data Analyst": [
+    {
+      "id": "da1",
+      "type": "technical",
+      "question": "How would you handle missing data in a dataset before running an analysis?",
+      "keywords": ["imputation", "drop", "mean", "median", "missing", "bias", "distribution"],
+      "ideal_points": ["names at least two handling strategies", "discusses when each is appropriate", "mentions checking for bias introduced"]
+    },
+    {
+      "id": "da2",
+      "type": "technical",
+      "question": "Explain the difference between correlation and causation, and how you'd test for a causal relationship.",
+      "keywords": ["confound", "experiment", "a/b test", "regression", "control", "randomize"],
+      "ideal_points": ["clearly distinguishes the two concepts", "mentions a method to test causation", "mentions confounding variables"]
+    },
+    {
+      "id": "da3",
+      "type": "behavioral",
+      "question": "Tell me about a time your analysis led to a decision that stakeholders disagreed with. What happened?",
+      "keywords": ["stakeholder", "present", "data", "pushback", "communicate", "visualize"],
+      "ideal_points": ["describes how they presented evidence", "shows handling of pushback professionally", "states the outcome"]
+    },
+    {
+      "id": "da4",
+      "type": "behavioral",
+      "question": "Describe a project where you had to work with messy or incomplete requirements. How did you handle it?",
+      "keywords": ["clarify", "assumption", "iterate", "stakeholder", "scope"],
+      "ideal_points": ["mentions clarifying with stakeholders", "mentions stating assumptions explicitly", "describes iteration"]
+    }
+  ],
+  "General / Entry-Level": [
+    {
+      "id": "gen1",
+      "type": "behavioral",
+      "question": "Why are you interested in this role, and what do you know about what it involves?",
+      "keywords": ["role", "company", "skills", "growth", "learn"],
+      "ideal_points": ["shows genuine understanding of the role", "connects it to their own skills/goals"]
+    },
+    {
+      "id": "gen2",
+      "type": "behavioral",
+      "question": "Tell me about a time you failed at something. What did you learn?",
+      "keywords": ["fail", "mistake", "learn", "improve", "reflect", "accountability"],
+      "ideal_points": ["takes ownership rather than blaming others", "states a concrete lesson learned"]
+    },
+    {
+      "id": "gen3",
+      "type": "behavioral",
+      "question": "How do you prioritize tasks when you have multiple deadlines at once?",
+      "keywords": ["prioritize", "deadline", "urgent", "important", "plan", "communicate"],
+      "ideal_points": ["describes a concrete prioritization method", "mentions communicating tradeoffs to others"]
+    }
+  ]
+}
